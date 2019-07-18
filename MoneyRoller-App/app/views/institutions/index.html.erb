@@ -7,10 +7,10 @@
 
 <ul>
   <% @institutions.each do |institution| %>
-    <li><%= link_to institution.name, institution_path(institution) %></li>
+    <li><%= link_to institution.name, institution_path(institution), class: "all_institutions" %></li>
   <% end %>
 </ul>
 
-<p><button class="btn btn-outline-primary"><%= link_to "Back to Rollovers", rollovers_path(@rollover), class: "all_institutions"%></button></p>
+<p><button class="btn btn-outline-primary"><%= link_to "Back to Rollovers", rollovers_path(@rollover)%></button></p>
 
 </section>
